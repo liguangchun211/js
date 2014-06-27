@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta http-equiv="Content-type" contnet="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../../jquery/style.css"/>
+    <style type="text/css">
+        <!--
+        body {font-size: 12px;text-align: center }
+        .clsFrame {width: 300px;height: 100px }
+        .clsFrame div,span{display: none;float: left;width: 65px;height: 65px;border: solid 1px #f00; margin: 8px; }
+        .clsOne {background-color: #eee}
+        -->
+    </style>
+    <script languange="javascript" type="text/javascript" src="../../jquery/jquery-1.11.1.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        <!--
+        $(function(){
+            $(" #divOne ").css("display","block");
+        })
+        $(function(){
+            $(" div span ").css("display","block");
+        })
+        $(function(){
+            $(".clsFrame .clsOne").css("display","block");
+        })
+        $(function(){
+            $("#divOne,span").css("display","block");//合并匹配 #divOne span
+        })
+        -->
+    </script>
+    <title></title>
+</head>
+<body>
+<div class="clsFrame">
+    <div id="divOne">ID</div>
+    <div class="clsOne">CLASS</div>
+    <span>SPAN</span>
+</div>
+</body>
+</html>

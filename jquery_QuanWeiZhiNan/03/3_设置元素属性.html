@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="../../jquery/style.css"/>
+    <style type="text/css">
+        <!--
+            .clsSpn{float: left;padding-top: 10px;padding-left: 10px}
+            .clsImg{border: solid 1px #cccccc;padding: 3px;float: left}
+        -->
+    </style>
+    <script languange="javascript" type="text/javascript" src="../../jquery/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        <!--
+            $(function(){
+//                $("img").attr("src","../../image/k2.jpg");
+//                $("img").attr("title","this is an image");
+//                $("img").attr({src : "../../image/k3.jpg" ,title : "this is an image too"}); //多属性设置
+                $("img").attr({src:function(){ //函数方法
+                    return "../../image/k"+
+                            Math.floor( (Math.random()*100) %5) +
+                            ".jpg"
+                },title:"随机生成图片哦.鼠标悬浮一会我就显示"});
+                $("img").addClass("clsImg");
+                $("span").html("load success加载成功");
+            })
+        -->
+    </script>
+    <title></title>
+</head>
+<body>
+    <img alt="图片未加载成功。" src="../../image/k1.jpeg" style="float: left" />
+    <span class="clsSpn">正在加载loading。。。。。</span>
+</body>
+</html>

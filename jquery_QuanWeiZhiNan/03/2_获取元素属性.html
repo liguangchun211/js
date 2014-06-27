@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" contnet="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../../jquery/style.css"/>
+    <style type="text/css">
+        <!--
+            div{float: left; padding-left: 10px}
+            img{border: solid 1px #cccccc;padding: 3px;float: left}
+        -->
+    </style>
+    <script languange="javascript" type="text/javascript" src="../../jquery/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        <!--
+            $(function(){
+                var strAlt = $("img").attr("src");
+                strAlt += "<br/><br/>" + $("img").attr("title");
+                $("#divAlt").html(strAlt);
+            })
+        -->
+    </script>
+    <title></title>
+</head>
+<body>
+    <img alt="" src="../../image/k1.jpg" title="title is image" />
+    <div id="divAlt" class=""></div>
+</body>
+</html>

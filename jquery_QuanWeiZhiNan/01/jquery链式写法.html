@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../../jquery/style.css"/>
+    <style type="text/css">
+    <!--
+        .divFrame{width: 260px; border: solid 1px #666666; font-size: 10pt}
+        .divTitle{background-color:#eeeeee;padding: 5px }
+        .divContent{padding: 5px;display: none}
+        .divCurrColor{background-color: Red}
+    -->
+    </style>
+    <script languange="javascript" type="text/javascript" src="../../jquery/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        <!--
+        $(function(){
+            $(".divTitle").click(function(){
+                $(this).addClass("divCurrColor").next(".divContent").css("display","block");
+            });
+        })
+        -->
+    </script>
+    <title></title>
+</head>
+<body>
+    <div class="divFrame">
+        <div class="divTitle">主题</div>
+        <div class="divContent">
+            <a href="#">连接1</a><br>
+            <a href="#">连接2</a><br>
+            <a href="#">连接3</a>
+        </div>
+    </div>
+</body>
+</html>
