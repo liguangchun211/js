@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../../jquery/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../../jquery/jquery-ui.css"/>
+    <link type="text/css" rel="stylesheet" href="../../jquery/bootstrap-table.css"/>
+    <link type="text/css" rel="stylesheet" href="../../jquery/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="../../jquery/docs.css"/>
+    <style type="text/css">
+        <!--
+
+        -->
+    </style>
+    <script languange="javascript" type="text/javascript" src="../../jquery/jquery-1.11.1.js"></script>
+    <script languange="javascript" type="text/javascript" src="../../jquery/bootstrap-table.js"></script>
+    <script languange="javascript" type="text/javascript" src="../../jquery/docs.js"></script>
+    <script languange="javascript" type="text/javascript" src="../../jquery/examples.js"></script>
+    <script languange="javascript" type="text/javascript" src="../../jquery/jquery-ui.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        $(function(){
+           $("#divpic").datepicker();
+        });
+        $().ready(function(){
+            alert("IAM JQUERY");
+        })
+        /*window.onload = function(){
+            alert("IAM JS");
+        }*/
+    </script>
+    <title></title>
+</head>
+<body>
+   DATE: <input type="text" id="divpic" />
+
+   <table id="table-pagination" data-toggle="table" data-url="../../jquery/data2.json" data-height="240" data-pagination="true" data-search="true">
+       <thead>
+       <tr>
+           <th data-field="state" data-align="left" data-checkbox="true"></th>
+           <th data-field="id" data-align="right">Item ID</th>
+           <th data-field="name" data-align="center">Item Name</th>
+           <th data-field="price" data-align="">Item Price</th>
+       </tr>
+       </thead>
+   </table>
+</body>
+</html>
